@@ -14,5 +14,5 @@ The markers used for this project are the Hiro image and the Astipalea image:
 
 You can try out the project at the following links:
 
-- [Demo 1](https://gkalogeitonas.github.io/PoetARy/MindAR.html)
-- [Demo 2](https://gkalogeitonas.github.io/PoetARy)
+- [Demo 1](https://gkalogeitonas.github.io/PoetARy)
+- [Demo 2](https://gkalogeitonas.github.io/PoetARy/MindAR.html)
