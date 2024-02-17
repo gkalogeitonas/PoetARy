@@ -6,16 +6,27 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: /assets/markers/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      <a-assets>
-        <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/card-example/card.png" />
-        <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
-      </a-assets>
-
+    <a-scene mindar-image="imageTargetSrc:assets/markers/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        <a-plane position="0 0 -0.01" height="1.5" width="1.7"
+          position="0 0 0.01" 
+          rotation="0 0 0"
+          opacity="0.5
+          color="white">
+        </a-plane>
+        <a-text 
+         value="Kos Leros Symi Astropalia\n Karpathos Tilos Kastellorizo…\n Poios twra voutixtis argosimonontas\n Ton ourano vythou pou anabei ta sfoungaria tou\n Aksafna niothetei aggelos kai Panormitis tou\n Mystikou pou xexynetai «xryseais\n Nifadesi»"
+         align="center" 
+         color="#000" 
+         background="color: #fff"
+         position="0 0 0" 
+         rotation="0 0 0"
+         width="2" 
+         wrapCount="30"
+         width="2"
+         lineHeight="50">
+        </a-text>
       </a-entity>
     </a-scene>
   </body>
