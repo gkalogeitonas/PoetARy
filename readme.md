@@ -16,3 +16,9 @@ You can try out the project at the following links:
 
 - [Demo 1](https://gkalogeitonas.github.io/PoetARy)
 - [Demo 2](https://gkalogeitonas.github.io/PoetARy/MindAR.html)
+
+
+
+## Multi Target 
+- [Demo 3](https://gkalogeitonas.github.io/PoetARy/multi-targets.html)
+![Astipalea Marker](assets/images/prosfora.webp)
