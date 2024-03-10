@@ -1,18 +1,53 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    </head>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-            <a-marker preset="hiro">
-                <a-image src="assets/images/pattern-aggelos_astipaleas.png" position="0 0.5 0" rotation="-90 0 0" width="1" height="1"></a-image>
-                <a-plane position="1 0.5 0" rotation="-90 0 0" width="1" height="1" color="yellow">
-                    <a-text value="Kos Leros Symi Astropalia\n\nKarpathos Tilos Kastellorizo…\n\nPoios twra voutixtis argosimonontas\n\nTon ourano vythou pou anabei ta sfoungaria tou\n\nAksafna niothetei aggelos kai Panormitis tou\n\nMystikou pou xexynetai «xryseais\n\nNifadesi»" align="center" color="#000" position="0 0 0.01" width="2" wrapCount="30"></a-text>
-                </a-plane>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc:assets/markers/multitargets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-plane position="0 0 -0.01" height="1.5" width="1.7"
+          position="0 0 0.01" 
+          rotation="0 0 0"
+          opacity="0.5
+          color="white">
+        </a-plane>
+        <a-text 
+         value="Kos Leros Symi Astropalia\n Karpathos Tilos Kastellorizo…\n Poios twra voutixtis argosimonontas\n Ton ourano vythou pou anabei ta sfoungaria tou\n Aksafna niothetei aggelos kai Panormitis tou\n Mystikou pou xexynetai «xryseais\n Nifadesi»"
+         align="center" 
+         color="#000" 
+         background="color: #fff"
+         position="0 0 0" 
+         rotation="0 0 0"
+         width="2" 
+         wrapCount="30"
+         width="2"
+         lineHeight="50">
+        </a-text>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane position="0 0 -0.01" height="1.5" width="1.7"
+          position="0 0 0.01" 
+          rotation="0 0 0"
+          opacity="0.5
+          color="white">
+        </a-plane>
+        <a-text 
+        value="Aggele sy pou kapou edo gyro petas\n Polypathis kai aoratos, piase mou to heri\n Chrysomenes echoun tis pagides oi anthropoi\n Ki einai anagki na meino ap' tous apexo."
+         align="center" 
+         color="#000" 
+         background="color: #fff"
+         position="0 0 0" 
+         rotation="0 0 0"
+         width="2" 
+         wrapCount="30"
+         width="2"
+         lineHeight="50">
+        </a-text>
+      </a-entity>    </a-entity>
+    </a-scene>
+  </body>
 </html>

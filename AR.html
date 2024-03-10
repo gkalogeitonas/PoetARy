@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+            <a-marker preset="hiro">
+                <a-image src="assets/images/pattern-aggelos_astipaleas.png" position="0 0.5 0" rotation="-90 0 0" width="1" height="1"></a-image>
+                <a-plane position="1 0.5 0" rotation="-90 0 0" width="1" height="1" color="yellow">
+                    <a-text value="Kos Leros Symi Astropalia\n\nKarpathos Tilos Kastellorizo…\n\nPoios twra voutixtis argosimonontas\n\nTon ourano vythou pou anabei ta sfoungaria tou\n\nAksafna niothetei aggelos kai Panormitis tou\n\nMystikou pou xexynetai «xryseais\n\nNifadesi»" align="center" color="#000" position="0 0 0.01" width="2" wrapCount="30"></a-text>
+                </a-plane>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
